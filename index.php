@@ -6,7 +6,7 @@ $json = file_get_contents( $url );
 $arr = json_decode( $json, TRUE );
 foreach ( $arr AS $element ) {
     foreach ( $element AS $e ) {
-      echo $e . '<br>';
+      echo $e['domains'] . '<br>';
     }
   }
 ?>
